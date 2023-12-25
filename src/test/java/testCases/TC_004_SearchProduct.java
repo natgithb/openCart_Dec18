@@ -8,23 +8,23 @@ import pageObjects.SearchPage;
 import testBase.BaseClass;
 
 
-
 public class TC_004_SearchProduct extends BaseClass {
-	@Test(groups= {"Master"})
-	void test_search() {
+	
+	@Test(groups= {"Sanity","Master"})
+	void test_search()  throws InterruptedException{
 
 		logger.info(" Starting TC_004_SearchProduct Test ");
 
 		try {
 		
 		HomePage hp=new HomePage(driver);
-		hp.enterProduct("mac");
+		hp.enterProduct("MacBook");
 		hp.clickSearch();
 		
 		SearchPage sp=new SearchPage(driver);
-	    sp.isProductExist("mac");
+	    sp.isProductExist("MacBook");
 	    
-	    Assert.assertEquals(sp.isProductExist("mac"), true);
+	    Assert.assertEquals(sp.isProductExist("MacBook"), true);
 		}
 		catch(Exception e) {
 			Assert.fail();

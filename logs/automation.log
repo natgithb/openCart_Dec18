@@ -490,3 +490,11 @@
 17:59:21.008 [main] INFO  testCases.TC_002_LoginTest - ***  Finished TC_002_LoginTest
 18:15:13.938 [main] INFO  testCases.TC_002_LoginTest - ***  Starting TC_002_LoginTest
 18:15:23.043 [main] INFO  testCases.TC_002_LoginTest - ***  Finished TC_002_LoginTest
+11:46:06.728 [main] INFO  testCases.TC_004_SearchProduct -  Starting TC_004_SearchProduct Test 
+11:47:19.538 [main] INFO  testCases.TC_004_SearchProduct -  Starting TC_004_SearchProduct Test 
+11:49:45.529 [main] INFO  testCases.TC_004_SearchProduct -  Starting TC_004_SearchProduct Test 
+11:51:01.848 [main] INFO  testCases.TC_004_SearchProduct -  Starting TC_004_SearchProduct Test 
+11:53:38.918 [main] INFO  testCases.TC_004_SearchProduct -  Starting TC_004_SearchProduct Test 
+11:53:43.425 [main] INFO  testCases.TC_004_SearchProduct -  Finished TC_004_SearchProduct Test 
+11:54:46.886 [main] INFO  testCases.TC_004_SearchProduct -  Starting TC_004_SearchProduct Test 
+11:54:50.577 [main] INFO  testCases.TC_004_SearchProduct -  Finished TC_004_SearchProduct Test 
