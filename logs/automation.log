@@ -486,3 +486,7 @@
 21:03:42.664 [main] INFO  testCases.TC_002_LoginTest - ***  Finished TC_002_LoginTest
 21:05:19.849 [main] INFO  testCases.TC_002_LoginTest - ***  Starting TC_002_LoginTest
 21:05:22.824 [main] INFO  testCases.TC_002_LoginTest - ***  Finished TC_002_LoginTest
+17:59:15.034 [main] INFO  testCases.TC_002_LoginTest - ***  Starting TC_002_LoginTest
+17:59:21.008 [main] INFO  testCases.TC_002_LoginTest - ***  Finished TC_002_LoginTest
+18:15:13.938 [main] INFO  testCases.TC_002_LoginTest - ***  Starting TC_002_LoginTest
+18:15:23.043 [main] INFO  testCases.TC_002_LoginTest - ***  Finished TC_002_LoginTest
