@@ -503,3 +503,7 @@
 12:27:51.315 [main] INFO  testCases.TC_005_AddToCartPage -  Finished TC_005_AddToCartPage Test 
 12:28:40.816 [main] INFO  testCases.TC_005_AddToCartPage -  Starting TC_005_AddToCartPage Test 
 12:28:46.511 [main] INFO  testCases.TC_005_AddToCartPage -  Finished TC_005_AddToCartPage Test 
+16:10:03.765 [main] INFO  testCases.TC_005_AddToCartPage -  Starting TC_005_AddToCartPage Test 
+16:10:19.090 [main] INFO  testCases.TC_005_AddToCartPage -  Finished TC_005_AddToCartPage Test 
+16:10:54.879 [main] INFO  testCases.TC_005_AddToCartPage -  Starting TC_005_AddToCartPage Test 
+16:11:02.895 [main] INFO  testCases.TC_005_AddToCartPage -  Finished TC_005_AddToCartPage Test 

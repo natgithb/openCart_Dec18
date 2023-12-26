@@ -1,9 +1,13 @@
 package pageObjects;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class CheckoutPage  extends BasePage {
@@ -12,6 +16,7 @@ public class CheckoutPage  extends BasePage {
 	{
 		super(driver);
 	}
+	
 	
 	// Elements
 	
@@ -104,7 +109,7 @@ public class CheckoutPage  extends BasePage {
 		new Select(drpState).selectByVisibleText(State);
 	}
 	
-	public void clickOnContinueAfterBillingAddress()
+	public void clickOnContinueAfterBillingAddress() //stuck
 	{
 		btncontinueBillingAddress.click();
 	}
@@ -140,12 +145,60 @@ public class CheckoutPage  extends BasePage {
 	}
 	
 	public void clickOnConfirmOrder() {
-		btnConfOrder.click();
+		
+		//btnConfOrder.click();
+		
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+	     js.executeScript("arguments[0].click();", btnConfOrder);
+	    
 	}
 	
+	
+ /*   public boolean isOrderPlaced() {
+    	
+   	 WebDriverWait wait = new WebDriverWait(driver, 10);
+
+        try {
+            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            alert.accept();
+            wait.until(ExpectedConditions.visibilityOf(lblOrderConMsg));
+
+            // Consider using more explicit waits instead of Thread.sleep
+            Thread.sleep(2000);
+
+            btnConfOrder.click();
+            wait.until(ExpectedConditions.visibilityOf(lblOrderConMsg));
+
+            return lblOrderConMsg.getText().equals("Your order has been placed!");
+        } catch (Exception e) {
+            return false;
+        }
+   
+    
 	public boolean isOrderPlaced() {
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+
+            js.executeScript("arguments[0].scrollIntoView(true);", lblOrderConMsg);
+            Thread.sleep(2000); // Use an explicit wait instead of Thread.sleep
+
+            js.executeScript("arguments[0].click();", btnConfOrder);
+            Thread.sleep(2000); // Use an explicit wait instead of Thread.sleep
+
+            return lblOrderConMsg.getText().equals("Your order has been placed!");
+        } catch (Exception e) {
+            return false;
+        }
+    } }*/
+
+    
+	/*public boolean isOrderPlaced() {
 		try {
-			driver.switchTo().alert().accept();
+	        Alert alert = driver.switchTo().alert();
+	        alert.accept();
+	        wait.until(ExpectedConditions.visibilityOf(lblOrderConMsg));
+
+	        
 			Thread.sleep(2000);
 			btnConfOrder.click();
 			Thread.sleep(2000);
@@ -161,6 +214,26 @@ public class CheckoutPage  extends BasePage {
 		catch(Exception e) {
 			return false;
 		}
+	}*/
+	
+// Class code	
+	public boolean isOrderPlaced() throws InterruptedException
+	{
+		try
+		{
+		driver.switchTo().alert().accept();
+		Thread.sleep(2000);
+		btnConfOrder.click();
+		Thread.sleep(3000);
+		if(lblOrderConMsg.getText().equals("Your order has been placed!"))
+			return true;
+		else
+			return false;
+		}catch(Exception e)
+		{
+			return false;
+		}
+		
 	}
 		
 	public String isOrderPlaceds() {

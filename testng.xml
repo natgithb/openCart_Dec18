@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="OpencartSuite">
+<suite name="OpencartSuite"> 
   <test thread-count="5" name="OpencartTest">
 	  
 	  <parameter name="browser" value="chrome">
@@ -10,9 +10,9 @@
       <classes>
 	  <!-- <class name="testCases.TC_001_AccountRegistreationTest" /> 
 	   <class name="testCases.TC_002_LoginTest" /> 
-	   <class name="testCases.TC_004_SearchProduct" /> 	
-	   <class name="testCases.TC_005_AddToCartPage" /> -->	   
-	<class name="testCases.TC_006_TC_006_EndToEndTest" />
+	   <class name="testCases.TC_004_SearchProduct" />  
+	   <class name="testCases.TC_005_AddToCartPage" />	-->   
+	   <class name="testCases.TC_006_TC_006_EndToEndTest" /> 
 	  </classes>
 	  
   </test> <!-- OpencartTest -->
