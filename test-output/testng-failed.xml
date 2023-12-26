@@ -4,12 +4,13 @@
   <test thread-count="5" name="OpencartTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_004_SearchProduct">
+      <class name="testCases.TC_006_TC_006_EndToEndTest">
         <methods>
-          <include name="test_search"/>
+          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="endToendTest"/>
         </methods>
-      </class> <!-- testCases.TC_004_SearchProduct -->
+      </class> <!-- testCases.TC_006_TC_006_EndToEndTest -->
     </classes>
   </test> <!-- OpencartTest(failed) -->
 </suite> <!-- Failed suite [OpencartSuite] -->

@@ -9,8 +9,10 @@
       
       <classes>
 	  <!-- <class name="testCases.TC_001_AccountRegistreationTest" /> 
-	   <class name="testCases.TC_002_LoginTest" /> -->
-	   <class name="testCases.TC_004_SearchProduct" /> 	   
+	   <class name="testCases.TC_002_LoginTest" /> 
+	   <class name="testCases.TC_004_SearchProduct" /> 	
+	   <class name="testCases.TC_005_AddToCartPage" /> -->	   
+	<class name="testCases.TC_006_TC_006_EndToEndTest" />
 	  </classes>
 	  
   </test> <!-- OpencartTest -->

@@ -33,6 +33,7 @@ public class SearchPage extends BasePage {
 	
 	// Methods
 	
+	// Checking if product is exist?
 	public boolean isProductExist(String productName)
 	{
 		boolean flag=false;
@@ -45,7 +46,8 @@ public class SearchPage extends BasePage {
 		 }
 		return flag;
    }
-	
+
+	// Product exist
 	public void selectProduct(String productName) {
 		for(WebElement product:searchProducts ) {
 			if(product.getAttribute("title").equals(productName)) {
@@ -53,7 +55,24 @@ public class SearchPage extends BasePage {
 			}
 		}		
 	}
-
 	
+	public void setQuantity(String qty) {
+		txtquantity.clear();
+		txtquantity.sendKeys(qty);
+	}
+	
+	public void addToCart() {
+		btnaddToCart.click();
+	}
+	
+	public boolean checkConfMsg() {
+		
+		try {
+			return cnfMsg.isDisplayed();
+		}
+		catch(Exception e) {
+			return false;
+		}
+	}	
 	
 }
