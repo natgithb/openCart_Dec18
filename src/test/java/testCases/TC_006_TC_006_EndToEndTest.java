@@ -15,6 +15,7 @@ import testBase.BaseClass;
 
 // IMPORTANT- There is issues with total price validation so
 // this part is within comment
+
 public class TC_006_TC_006_EndToEndTest extends BaseClass{
 
 @Test	
@@ -100,9 +101,9 @@ public class TC_006_TC_006_EndToEndTest extends BaseClass{
 	Thread.sleep(1000);
 	ch.setlastName(randomString().toUpperCase());
 	Thread.sleep(2000);
-	ch.setaddress1("add1");
+	ch.setaddress1("addres1");
 	Thread.sleep(1000);
-	ch.setaddress2("add2");
+	ch.setaddress2("addres2");
 	Thread.sleep(1000);
 	ch.setcity("Rehovot");
 	Thread.sleep(1000);
